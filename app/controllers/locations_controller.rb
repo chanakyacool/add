@@ -25,6 +25,9 @@ class LocationsController < ApplicationController
   # GET /locations/new.json
   def new
     @location = Location.new
+    @location.ip = request.remote_ip
+    @location.city = request.location.city
+    @location.country = request.location.country
 
     respond_to do |format|
       format.html # new.html.erb
