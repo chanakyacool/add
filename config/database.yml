@@ -15,8 +15,8 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: add_development
+  database: add_location
   pool: 5
   username: postgres
-  password: admin
+  password: vaio
 

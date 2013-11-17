@@ -5,8 +5,6 @@ class CreateLocations < ActiveRecord::Migration
       t.string :ip
       t.string :city
       t.string :country
-
-      t.timestamps
     end
   end
 end

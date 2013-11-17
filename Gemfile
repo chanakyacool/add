@@ -28,6 +28,16 @@ gem 'jquery-rails'
  gem 'therubyracer'
  gem "less-rails" #Sprockets (what Rails 3.1 uses for its asset pipeline) supports LESS
 
+ #Better errors
+ group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end
+
+#rails admin
+gem 'rails_admin'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -42,3 +52,6 @@ gem 'jquery-rails'
 
 # To use debugger
 # gem 'debugger'
+
+
+gem "devise"

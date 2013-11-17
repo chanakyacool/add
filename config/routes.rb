@@ -1,4 +1,13 @@
 Add::Application.routes.draw do
+  
+
+  resources :comments
+
+
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+
+  devise_for :users
+
   resources :locations
   root :to => 'locations#index'
 
